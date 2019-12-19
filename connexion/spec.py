@@ -1,6 +1,9 @@
 import abc
 import copy
-import pathlib
+try:
+    import pathlib
+except ImportError:
+    import pathlib2 as pathlib
 
 import jinja2
 import six

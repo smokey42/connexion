@@ -1,6 +1,9 @@
 import datetime
 import logging
-import pathlib
+try:
+    import pathlib
+except ImportError:
+    import pathlib2 as pathlib
 from decimal import Decimal
 from types import FunctionType  # NOQA
 
