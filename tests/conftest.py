@@ -1,6 +1,9 @@
 import json
 import logging
-import pathlib
+try:
+    import pathlib
+except ImportError:
+    import pathlib2 as pathlib
 import sys
 
 import pytest

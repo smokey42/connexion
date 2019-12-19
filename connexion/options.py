@@ -1,5 +1,8 @@
 import logging
-import pathlib
+try:
+    import pathlib
+except ImportError:
+    import pathlib2 as pathlib
 from typing import Optional  # NOQA
 
 try:

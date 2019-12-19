@@ -1,6 +1,9 @@
 import copy
 import math
-import pathlib
+try:
+    import pathlib
+except ImportError:
+    import pathlib2 as pathlib
 import types
 
 import mock
